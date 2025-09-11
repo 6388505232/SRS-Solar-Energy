@@ -1,0 +1,144 @@
+<!-- about-solar.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Our Solar Technology</title>
+ 
+  <style>
+    body {
+      font-family: "Poppins", Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4fdfc;
+      color: #333;
+    }
+
+    .solar-section {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 50px 20px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    }
+
+    .solar-section h1 {
+      text-align: center;
+      font-size: 2.8rem;
+      margin-bottom: 20px;
+      color: #00796b; /* solar green */
+    }
+
+    .solar-section p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      margin-bottom: 20px;
+      text-align: justify;
+      color: #444;
+    }
+
+    .solar-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .solar-gallery img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .solar-gallery img:hover {
+      transform: scale(1.08);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    }
+
+    .back-btn {
+      display: block;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .back-btn a {
+      background: linear-gradient(135deg, #ff9800, #ffc107); /* solar sun colors */
+      color: #fff;
+      padding: 12px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      transition: all 0.3s ease;
+      display: inline-block;
+    }
+
+    .back-btn a:hover {
+      background: linear-gradient(135deg, #ffc107, #ff9800);
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 600px) {
+      .solar-section h1 {
+        font-size: 2rem;
+      }
+      .solar-section p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="solar-section">
+    <h1>About Our Solar Technology</h1>
+    <p>
+      At <strong>Rudra Urja Solar</strong>, we believe in powering a sustainable future with cutting-edge 
+      solar technology. Our advanced solar panels and inverters are engineered for high efficiency, 
+      long durability, and eco-friendly performance. With years of expertise in renewable energy, 
+      we bring reliable solar solutions for homes, businesses, and industries.
+    </p>
+
+    <p>
+      Since our inception, we have been committed to providing affordable and clean energy solutions. 
+      From rooftop installations to large-scale solar farms, our projects reflect innovation, 
+      sustainability, and trust. We continuously upgrade our solar equipment to meet global standards 
+      and ensure our customers enjoy uninterrupted green energy.
+    </p>
+
+    <p>
+      Our dedicated team of engineers, technicians, and energy experts work tirelessly to design and 
+      implement customized solar systems that maximize energy output while minimizing costs. 
+      Every installation we carry out stands as a symbol of our commitment to reducing carbon 
+      footprints and building a brighter tomorrow.
+    </p>
+
+    <p>
+      With Rudra Urja Solar, you don’t just save on energy bills—you invest in a cleaner planet for 
+      future generations.
+    </p>
+
+    <!-- Image Gallery -->
+    <div class="solar-gallery">
+      <img src="img/solar8.png" alt="Solar Panels Installation">
+      <img src="img/solar9.png" alt="Solar Plant">
+      <img src="img/solar10.png" alt="Solar Rooftop">
+      <img src="img/solar11.png" alt="Solar Field">
+      <img src="img/solarp6.png" alt="Solar Inverters">
+      <img src="img/solarp7.png" alt="Residential Solar">
+      <img src="img/solarp8.png" alt="Industrial Solar Setup">
+      <img src="img/solarp12.png" alt="Solar Energy Solutions">
+      <img src="img/solar12.jpeg" alt="Solar Energy Solutions">
+    </div>
+
+    <!-- Back Button -->
+    <div class="back-btn">
+      <a href="index.html">⬅ Back to Home</a>
+    </div>
+  </section>
+</body>
+</html>

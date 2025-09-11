@@ -1,0 +1,158 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: #ffffff;
+  --foreground: #0f172a; /* Accessible dark body text */
+  --card: #ffffff;
+  --card-foreground: #0f172a;
+  --popover: #ffffff;
+  --popover-foreground: #0f172a;
+
+  --primary: #ff0000; /* CTA red */
+  --primary-foreground: #ffffff;
+
+  --secondary: #b0bec5; /* Soft gray */
+  --secondary-foreground: #0f172a;
+
+  --muted: #e0f7fa; /* Light blue neutral */
+  --muted-foreground: #0f172a;
+
+  --accent: #b0bec5; /* Borders / hover accents */
+  --accent-foreground: #0f172a;
+
+  --destructive: #ff0000;
+  --destructive-foreground: #ffffff;
+
+  --border: #b0bec5;
+  --input: #ffffff;
+  --ring: rgba(255, 0, 0, 0.5);
+
+  --chart-1: #0ea5e9;
+  --chart-2: #ef4444;
+  --chart-3: #94a3b8;
+  --chart-4: #22c55e;
+  --chart-5: #f59e0b;
+
+  --radius: 0.5rem;
+
+  --sidebar: #ffffff;
+  --sidebar-foreground: #0f172a;
+  --sidebar-primary: #ff0000;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #b0bec5;
+  --sidebar-accent-foreground: #0f172a;
+  --sidebar-border: #b0bec5;
+  --sidebar-ring: rgba(255, 0, 0, 0.5);
+}
+
+.dark {
+  --background: #0f172a; /* Dark slate */
+  --foreground: #ffffff;
+
+  --card: #0f172a;
+  --card-foreground: #ffffff;
+
+  --popover: #0f172a;
+  --popover-foreground: #ffffff;
+
+  --primary: #ff4d4d; /* Slightly lighter red for dark mode contrast */
+  --primary-foreground: #ffffff;
+
+  --secondary: #546e7a; /* Muted blue-gray */
+  --secondary-foreground: #ffffff;
+
+  --muted: #0b2530; /* Deep blue for surfaces */
+  --muted-foreground: #c7d2fe;
+
+  --accent: #334155; /* Slate accent in dark */
+  --accent-foreground: #ffffff;
+
+  --destructive: #ff4d4d;
+  --destructive-foreground: #0f172a;
+
+  --border: #1f2937;
+  --input: #0f172a;
+  --ring: rgba(255, 77, 77, 0.55);
+
+  --chart-1: #38bdf8;
+  --chart-2: #f87171;
+  --chart-3: #cbd5e1;
+  --chart-4: #34d399;
+  --chart-5: #fbbf24;
+
+  --sidebar: #111827;
+  --sidebar-foreground: #e5e7eb;
+  --sidebar-primary: #ff4d4d;
+  --sidebar-primary-foreground: #0f172a;
+  --sidebar-accent: #1f2937;
+  --sidebar-accent-foreground: #e5e7eb;
+  --sidebar-border: #1f2937;
+  --sidebar-ring: rgba(255, 77, 77, 0.55);
+}
+
+/* Map Tailwind font tokens to our new fonts */
+@theme inline {
+  --font-sans: var(--font-dm-sans);
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  /* Use Space Grotesk for headings per brief */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .heading {
+    font-family: var(--font-space-grotesk), ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial,
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    letter-spacing: -0.01em;
+  }
+}
