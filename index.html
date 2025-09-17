@@ -3,583 +3,590 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Rudra Urja | Solar Energy Solutions</title>
+  <title>G M Solar | Premium Solar Energy Solutions</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <!-- Header -->
-<header>
-  <div class="container">
-    <nav class="navbar">
-      <div class="logo">
-        <!-- Sun icon add kiya -->
-        <img src="img/sun.png" alt="Sun Logo" class="sun-logo">
-        <h1>Rudra <span>Urja</span></h1>
-      </div>
-      <ul class="nav-links">
-  <li><a href="#home">Home</a></li>
-  <li><a href="#about">About</a></li>
-  <li><a href="#services">Services</a></li>
-  <li><a href="#projects">Projects</a></li>
-  <li><a href="#equipment">Solutions</a></li>
-  <li><a href="#subsidy">Subsidy</a></li> <!-- ✅ New Menu Item -->
-  <li><a href="#contact">Contact</a></li>
-</ul>
-
-      <div class="hamburger">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
-    </nav>
+  <!-- Loading Screen -->
+  <div class="loader">
+    <div class="sun-loader">
+      <div class="sun-circle"></div>
+      <div class="sun-rays"></div>
+    </div>
+    <p>Harnessing Solar Power...</p>
   </div>
-</header>
 
+  <!-- Cursor Effects -->
+  <div class="cursor-dot" data-cursor-dot></div>
+  <div class="cursor-outline" data-cursor-outline></div>
 
-  <!-- Hero -->
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <nav class="navbar">
+        <div class="logo">
+          <img src="img/sun.png" alt="Sun Logo" class="sun-logo">
+          <h1>G M <span>Solar</span></h1>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#home" data-hover="Home">Home</a></li>
+          <li><a href="#about" data-hover="About">About</a></li>
+          <li><a href="#services" data-hover="Services">Services</a></li>
+          <li><a href="#projects" data-hover="Projects">Projects</a></li>
+          <li><a href="#equipment" data-hover="Solutions">Solutions</a></li>
+          <li><a href="#subsidy" data-hover="Subsidy">Subsidy</a></li>
+          <li><a href="#contact" data-hover="Contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
   <section id="home" class="hero">
+    <div class="hero-particles" id="particles-js"></div>
     <div class="container">
       <div class="hero-content">
-        <h2>Powering a Greener Future with Solar Energy</h2>
+        <h2 class="animate-text">Powering a <span class="txt-rotate" data-period="2000" data-rotate='[ "Greener", "Brighter", "Sustainable" ]'></span> Future</h2>
         <p>Delivering clean, reliable, and affordable solar solutions for homes, businesses, and industries across India.</p>
-        <a href="#contact" class="btn">Get Free Consultation</a>
-        
+        <div class="hero-buttons">
+          <a href="#contact" class="btn btn-primary">Get Free Consultation</a>
+          <a href="#services" class="btn btn-secondary">Our Services <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <div class="mouse">
+          <div class="wheel"></div>
+        </div>
+        <div class="arrows">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- About -->
+  <!-- About Section -->
   <section id="about" class="about">
     <div class="container">
       <div class="section-title">
         <h2>About Us</h2>
+        <p>Leading the solar revolution with innovation and expertise</p>
       </div>
       <div class="about-content">
         <div class="about-text">
-          <p class="tagline">
-            <span class="highlight">10+ Years Experience</span>
-            <span class="subtext">Delivering Sustainable Solar Energy Solutions</span>
-          </p>
-          <h3>Leading Solar Energy Company in India</h3>
-          <p>Founded with a vision to promote clean energy, Rudra Urja has successfully installed 1000+ solar projects across residential, commercial, and industrial sectors.</p>
-          <p>We provide complete solar EPC (Engineering, Procurement, Construction) solutions, including rooftop solar systems, solar water heaters, solar street lights, and large-scale solar power plants.</p>
-          <p>Our mission is to reduce carbon footprint while helping customers save on electricity bills with innovative and cost-effective solar technology.</p>
-         <a href="about-solar.html" class="explore-btn">Explore Me</a>
+          <div class="experience-badge">
+            <span class="years">10+</span>
+            <span class="text">Years Experience</span>
+          </div>
+          <h3>Pioneering Solar Energy Solutions in India</h3>
+          <p>Founded with a vision to promote clean energy, G M Solar has successfully installed 1000+ solar projects across residential, commercial, and industrial sectors.</p>
+          <p>We provide complete solar EPC solutions, including rooftop solar systems, solar water heaters, solar street lights, and large-scale solar power plants.</p>
+          <div class="stats-container">
+            <div class="stat">
+              <div class="stat-number" data-count="1000">0</div>
+              <div class="stat-label">Projects Completed</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number" data-count="250">0</div>
+              <div class="stat-label">Happy Clients</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number" data-count="15">0</div>
+              <div class="stat-label">States Covered</div>
+            </div>
+          </div>
+          <a href="about-solar.html" class="explore-btn">Explore More <i class="fas fa-arrow-right"></i></a>
         </div>
         <div class="about-image">
-          <img src="img/solar2.png" alt="Solar Panels on Rooftop"/>
+          <div class="image-container">
+            <img src="img/solar2.png" alt="Solar Panels on Rooftop"/>
+            <div class="floating-elements">
+              <div class="floating-element element-1">
+                <i class="fas fa-sun"></i>
+              </div>
+              <div class="floating-element element-2">
+                <i class="fas fa-bolt"></i>
+              </div>
+              <div class="floating-element element-3">
+                <i class="fas fa-leaf"></i>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Services -->
+  <!-- Services Section -->
   <section id="services" class="services">
     <div class="container">
       <div class="section-title">
         <h2>Our Services</h2>
+        <p>Comprehensive solar solutions for all your energy needs</p>
       </div>
       <div class="services-grid">
         <div class="service-card">
-          <div class="service-img">
-            <img src="img/solar3i.jpg" alt="Rooftop Solar"/>
+          <div class="service-icon">
+            <i class="fas fa-home"></i>
           </div>
           <div class="service-content">
             <h3>Rooftop Solar</h3>
             <p>Clean and efficient rooftop solar solutions for homes, apartments, and businesses.</p>
+            <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
           </div>
         </div>
+        
         <div class="service-card">
-          <div class="service-img">
-            <img src="img/solar4.jpg" alt="Solar Power Plants"/>
+          <div class="service-icon">
+            <i class="fas fa-industry"></i>
           </div>
           <div class="service-content">
             <h3>Solar Power Plants</h3>
             <p>Utility-scale solar power plant design and installation for industries and large projects.</p>
+            <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
           </div>
         </div>
+        
         <div class="service-card">
-          <div class="service-img">
-            <img src="img/solar5.png" alt="Solar Water Heater"/>
+          <div class="service-icon">
+            <i class="fas fa-water"></i>
           </div>
           <div class="service-content">
             <h3>Solar Water Heaters</h3>
             <p>Eco-friendly solar water heating systems for residential and commercial use.</p>
+            <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
           </div>
         </div>
+        
         <div class="service-card">
-          <div class="service-img">
-            <img src="img/solar6.png" alt="Solar Street Light"/>
+          <div class="service-icon">
+            <i class="fas fa-lightbulb"></i>
           </div>
           <div class="service-content">
             <h3>Solar Street Lighting</h3>
             <p>Reliable solar-powered street lighting solutions with smart technology.</p>
+            <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
           </div>
         </div>
+        
         <div class="service-card">
-          <div class="service-img">
-            <img src="img/solar7.png" alt="Solar Battery Storage"/>
+          <div class="service-icon">
+            <i class="fas fa-battery-full"></i>
           </div>
           <div class="service-content">
             <h3>Solar Battery Storage</h3>
             <p>Energy storage systems to ensure power backup and maximize solar efficiency.</p>
+            <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-tools"></i>
+          </div>
+          <div class="service-content">
+            <h3>Maintenance & Support</h3>
+            <p>Comprehensive maintenance services to keep your solar systems running efficiently.</p>
+            <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Projects -->
+  <!-- Projects Section -->
   <section id="projects" class="projects">
     <div class="container">
-      <div class="section-title"><h2>Our Projects</h2></div>
+      <div class="section-title">
+        <h2>Our Projects</h2>
+        <p>Showcasing our successful solar installations across India</p>
+      </div>
       <div class="projects-filter">
-        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn active" data-filter="all">All Projects</button>
         <button class="filter-btn" data-filter="residential">Residential</button>
         <button class="filter-btn" data-filter="commercial">Commercial</button>
         <button class="filter-btn" data-filter="industrial">Industrial</button>
       </div>
       <div class="projects-grid">
-
-
-  <!-- Residential Project 1 -->
-  <div class="project-card" data-category="residential">
-    <div class="project-img">
-      <img src="img/solarp2.png" alt="Home Solar Project 1"/>
-    </div>
-    <div class="project-overlay">
-      <h3>Residential Solar</h3>
-      <p>Pune, Maharashtra</p>
-    </div>
-  </div>
-
-  <!-- Residential Project 2 -->
-  <div class="project-card" data-category="residential">
-    <div class="project-img">
-      <img src="img/solarp3.png" alt="Home Solar Project 2"/>
-    </div>
-    <div class="project-overlay">
-      <h3>Residential Solar</h3>
-      <p>Delhi, NCR</p>
-    </div>
-  </div>
-
-  <!-- Residential Project 3 -->
-  <div class="project-card" data-category="residential">
-    <div class="project-img">
-      <img src="img/solarp4.png" alt="Home Solar Project 3"/>
-    </div>
-    <div class="project-overlay">
-      <h3>Residential Solar</h3>
-      <p>Jaipur, Rajasthan</p>
-    </div>
-  </div>
-
-  <!-- Residential Project 4 -->
-  <div class="project-card" data-category="residential">
-    <div class="project-img">
-      <img src="img/solarp5.png" alt="Home Solar Project 4"/>
-    </div>
-    <div class="project-overlay">
-      <h3>Residential Solar</h3>
-      <p>Bengaluru, Karnataka</p>
-    </div>
-  </div>
-</div>
-
-       <div class="projects-grid">
-  <!-- Commercial Project 1 -->
-  <div class="project-card" data-category="commercial">
-    <div class="project-img">
-      <img src="img/solarp13.png" alt="Commercial Solar 1"/>
-    </div>
-    <div class="project-overlay">
-      <h3>Commercial Rooftop 1</h3>
-      <p>Mumbai, India</p>
-    </div>
-  </div>
-
-  <!-- Commercial Project 2 -->
-  <div class="project-card" data-category="commercial">
-    <div class="project-img">
-      <img src="img/solarp14.png" alt="Commercial Solar 2"/>
-    </div>
-    <div class="project-overlay">
-      <h3>Commercial Rooftop 2</h3>
-      <p>Pune, India</p>
-    </div>
-  </div>
-
-  <!-- Commercial Project 3 -->
-  <div class="project-card" data-category="commercial">
-    <div class="project-img">
-      <img src="img/solar12.jpeg" alt="Commercial Solar 3"/>
-    </div>
-    <div class="project-overlay">
-      <h3>Commercial Rooftop 3</h3>
-      <p>Delhi, India</p>
-    </div>
-  </div>
-</div>
-
-        <div class="projects-grid">
-  <!-- Industrial Project 1 -->
-  <div class="project-card" data-category="industrial">
-    <div class="project-img">
-      <img src="img/solarp16.png" alt="Industrial Solar 1"/>
-    </div>
-    <div class="project-overlay">
-      <h3>Industrial Solar Plant 1</h3>
-      <p>Ahmedabad, India</p>
-    </div>
-  </div>
-
-  <!-- Industrial Project 2 -->
-  <div class="project-card" data-category="industrial">
-    <div class="project-img">
-      <img src="img/solarp17.png" alt="Industrial Solar 2"/>
-    </div>
-    <div class="project-overlay">
-      <h3>Industrial Solar Plant 2</h3>
-      <p>Surat, India</p>
-    </div>
-  </div>
-
-  <!-- Industrial Project 3 -->
-  <div class="project-card" data-category="industrial">
-    <div class="project-img">
-      <img src="img/solarp18.png" alt="Industrial Solar 3"/>
-    </div>
-    <div class="project-overlay">
-      <h3>Industrial Solar Plant 3</h3>
-      <p>Chennai, India</p>
-    </div>
-  </div>
-
-  <!-- Industrial Project 4 -->
-  <div class="project-card" data-category="industrial">
-    <div class="project-img">
-      <img src="img/solarp19.png" alt="Industrial Solar 4"/>
-    </div>
-    <div class="project-overlay">
-      <h3>Industrial Solar Plant 4</h3>
-      <p>Hyderabad, India</p>
-    </div>
-  </div>
-
-  <!-- Industrial Project 5 -->
-  <div class="project-card" data-category="industrial">
-    <div class="project-img">
-      <img src="img/solarp19.png" alt="Industrial Solar 5"/>
-    </div>
-    <div class="project-overlay">
-      <h3>Industrial Solar Plant 5</h3>
-      <p>Delhi, India</p>
-    </div>
-  </div>
-
-  <!-- Industrial Project 6 -->
-  <div class="project-card" data-category="industrial">
-    <div class="project-img">
-      <img src="img/solarp20.jpeg" alt="Industrial Solar 6"/>
-    </div>
-    <div class="project-overlay">
-      <h3>Industrial Solar Plant 6</h3>
-      <p>Mumbai, India</p>
-    </div>
-  </div>
-</div>
-
-
+        <!-- Project cards will be populated by JavaScript -->
+      </div>
     </div>
   </section>
 
-  <!-- Solutions/Equipment -->
+  <!-- Solutions/Equipment Section -->
   <section id="equipment" class="equipment">
     <div class="container">
-      <div class="section-title"><h2>Our Solar Solutions</h2></div>
-      <div class="equipment-item">
-        <div class="equipment-img"><img src="img/solarinverter.png" alt="Solar Inverter"/></div>
-        <div class="equipment-content">
-          <h3>Solar Inverters</h3>
-          <p>High-efficiency inverters to maximize power conversion from solar panels.</p>
-          <ul class="equipment-list">
-            <li><strong>On-Grid Inverters</strong> – For grid-tied solar systems.</li>
-            <li><strong>Off-Grid Inverters</strong> – Independent power for remote areas.</li>
-            <li><strong>Hybrid Inverters</strong> – Combine grid + storage for flexibility.</li>
-          </ul>
-          <a href="tel:+919999742120" class="call-btn">📞 Get a Quote</a>
-        </div>
+      <div class="section-title">
+        <h2>Our Solar Solutions</h2>
+        <p>Premium quality components for optimal performance</p>
       </div>
-      <div class="equipment-item">
-        <div class="equipment-img"><img src="img/solar10.png" alt="Solar Panels"/></div>
-        <div class="equipment-content">
-          <h3>Solar Panels</h3>
-          <p>Durable, high-performance panels with long warranties and low maintenance.</p>
-          <ul class="equipment-list">
-            <li>Monocrystalline Solar Panels</li>
-            <li>Polycrystalline Solar Panels</li>
-            <li>Bifacial Solar Panels</li>
-          </ul>
-          <a href="tel:+919999742120" class="call-btn">📞 Get a Quote</a>
+      <div class="equipment-slider">
+        <div class="equipment-item">
+          <div class="equipment-img">
+            <img src="img/solarinverter.png" alt="Solar Inverter"/>
+          </div>
+          <div class="equipment-content">
+            <h3>Solar Inverters</h3>
+            <p>High-efficiency inverters to maximize power conversion from solar panels.</p>
+            <ul class="equipment-list">
+              <li><strong>On-Grid Inverters</strong> – For grid-tied solar systems</li>
+              <li><strong>Off-Grid Inverters</strong> – Independent power for remote areas</li>
+              <li><strong>Hybrid Inverters</strong> – Combine grid + storage for flexibility</li>
+            </ul>
+            <a href="tel:+919999742120" class="call-btn">📞 Get a Quote</a>
+          </div>
+        </div>
+        
+        <div class="equipment-item">
+          <div class="equipment-img">
+            <img src="img/solar10.png" alt="Solar Panels"/>
+          </div>
+          <div class="equipment-content">
+            <h3>Solar Panels</h3>
+            <p>Durable, high-performance panels with long warranties and low maintenance.</p>
+            <ul class="equipment-list">
+              <li>Monocrystalline Solar Panels</li>
+              <li>Polycrystalline Solar Panels</li>
+              <li>Bifacial Solar Panels</li>
+            </ul>
+            <a href="tel:+919999742120" class="call-btn">📞 Get a Quote</a>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-
-<section id="features" class="features-section">
-  <h2 class="section-title">Why Choose Us</h2>
-  <div class="features-container">
-    
-    <!-- Feature Card -->
-    <div class="feature-card">
-      <div class="feature-front">
-        <i class="icon">💰</i>
-        <h3>BEST PRICING</h3>
-        <p>We ensure that our partners receive the best pricing we can provide.</p>
+  <!-- Features Section -->
+  <section id="features" class="features-section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Why Choose Us</h2>
+        <p>Excellence in every aspect of our service</p>
       </div>
-      <div class="feature-back">
-        <p>"Affordable solutions for every solar need"</p>
-        <a href="#contact" class="contact-btn">📞 Contact Us</a>
+      <div class="features-container">
+        <div class="feature-card">
+          <div class="feature-front">
+            <i class="icon">💰</i>
+            <h3>BEST PRICING</h3>
+            <p>We ensure that our partners receive the best pricing we can provide.</p>
+          </div>
+          <div class="feature-back">
+            <p>"Affordable solutions for every solar need"</p>
+            <a href="#contact" class="contact-btn">📞 Contact Us</a>
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-front">
+            <i class="icon">🛡️</i>
+            <h3>PRODUCT WARRANTY</h3>
+            <p>Our solar panels are backed by a 25-year warranty.</p>
+          </div>
+          <div class="feature-back">
+            <p>"Trusted quality, long-lasting guarantee"</p>
+            <a href="#contact" class="contact-btn">📞 Contact Us</a>
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-front">
+            <i class="icon">🤝</i>
+            <h3>AMAZING SUPPORT</h3>
+            <p>We are available to respond to any issues or questions.</p>
+          </div>
+          <div class="feature-back">
+            <p>"Your solar partner, always by your side"</p>
+            <a href="#contact" class="contact-btn">📞 Contact Us</a>
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-front">
+            <i class="icon">✅</i>
+            <h3>CERTIFIED PRODUCTS</h3>
+            <p>Certified products crafted with the best material.</p>
+          </div>
+          <div class="feature-back">
+            <p>"Top-notch quality, tested and trusted"</p>
+            <a href="#contact" class="contact-btn">📞 Contact Us</a>
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-front">
+            <i class="icon">🔆</i>
+            <h3>SOLAR MODULES</h3>
+            <p>We provide high quality solar modules.</p>
+          </div>
+          <div class="feature-back">
+            <p>"Power-packed performance, built to last"</p>
+            <a href="#contact" class="contact-btn">📞 Contact Us</a>
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-front">
+            <i class="icon">⚡</i>
+            <h3>SMOOTH SETUP</h3>
+            <p>Our solar solutions are easy to install and setup.</p>
+          </div>
+          <div class="feature-back">
+            <p>"Seamless installation, hassle-free experience"</p>
+            <a href="#contact" class="contact-btn">📞 Contact Us</a>
+          </div>
+        </div>
       </div>
     </div>
+  </section>
 
-    <!-- Feature Card -->
-    <div class="feature-card">
-      <div class="feature-front">
-        <i class="icon">🛡️</i>
-        <h3>PRODUCT WARRANTY</h3>
-        <p>Our solar panels are backed by a 25-year warranty.</p>
+  <!-- Subsidy Section -->
+  <section id="subsidy" class="subsidy-section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Azamgarh Solar Subsidies</h2>
+        <p>Government incentives to make solar more affordable</p>
       </div>
-      <div class="feature-back">
-        <p>"Trusted quality, long-lasting guarantee"</p>
-        <a href="#contact" class="contact-btn">📞 Contact Us</a>
-      </div>
-    </div>
-
-    <!-- Feature Card -->
-    <div class="feature-card">
-      <div class="feature-front">
-        <i class="icon">🤝</i>
-        <h3>AMAZING SUPPORT</h3>
-        <p>We are available to respond to any issues or questions.</p>
-      </div>
-      <div class="feature-back">
-        <p>"Your solar partner, always by your side"</p>
-        <a href="#contact" class="contact-btn">📞 Contact Us</a>
-      </div>
-    </div>
-
-    <!-- New Feature Card -->
-    <div class="feature-card">
-      <div class="feature-front">
-        <i class="icon">✅</i>
-        <h3>PRODUCTS</h3>
-        <p>Certified products crafted with the best material.</p>
-      </div>
-      <div class="feature-back">
-        <p>"Top-notch quality, tested and trusted"</p>
-        <a href="#contact" class="contact-btn">📞 Contact Us</a>
-      </div>
-    </div>
-
-    <!-- New Feature Card -->
-    <div class="feature-card">
-      <div class="feature-front">
-        <i class="icon">🔆</i>
-        <h3>SOLAR MODULES</h3>
-        <p>We provide high quality solar modules.</p>
-      </div>
-      <div class="feature-back">
-        <p>"Power-packed performance, built to last"</p>
-        <a href="#contact" class="contact-btn">📞 Contact Us</a>
-      </div>
-    </div>
-
-    <!-- New Feature Card -->
-    <div class="feature-card">
-      <div class="feature-front">
-        <i class="icon">⚡</i>
-        <h3>SMOOTH SETUP</h3>
-        <p>Our solar solutions are easy to install and setup.</p>
-      </div>
-      <div class="feature-back">
-        <p>"Seamless installation, hassle-free experience"</p>
-        <a href="#contact" class="contact-btn">📞 Contact Us</a>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-  
-
-
-<section id="subsidy" class="subsidy-section">
-  <div class="container">
-    <h2>Delhi Solar Subsidies</h2>
-
-    <!-- Commercial and Industrial Consumers -->
-    <div class="subsidy-box">
-      <h3>Commercial and Industrial Consumers of Delhi Solar Subsidies</h3>
-      <table>
-        <thead>
-          <tr>
-            <th>Rooftop Solar Plant Capacity (kW)</th>
-            <th>Delhi Solar Subsidy <br> GBI (over five years)*</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1 kW</td>
-            <td>₹6,000</td>
-          </tr>
-          <tr>
-            <td>2 kW</td>
-            <td>₹12,000</td>
-          </tr>
-          <tr>
-            <td>3 kW</td>
-            <td>₹18,000</td>
-          </tr>
-          <tr>
-            <td>4 kW</td>
-            <td>₹24,000</td>
-          </tr>
-          <tr>
-            <td>5 kW</td>
-            <td>₹30,000</td>
-          </tr>
-        </tbody>
-      </table>
-      <p class="note">*GBI = Generation Based Incentive paid over five years</p>
-    </div>
-
-    <!-- Residential Consumers -->
-    <div class="subsidy-box">
-      <h3>Residential Consumers of Delhi Solar Subsidies</h3>
-      <table>
-        <thead>
-          <tr>
-            <th>Rooftop Solar Plant Capacity (kW)</th>
-            <th>Delhi Solar Subsidy (₹)</th>
-            <th>Total Delhi Solar Subsidy (₹)</th>
-            <th>Total Subsidy (Central + Delhi) (₹)</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1 kW</td>
-            <td>₹2,000 (Capital Subsidy) + ₹18,000 (CBI)</td>
-            <td>₹20,000</td>
-            <td>₹50,000</td>
-          </tr>
-          <tr>
-            <td>2 kW</td>
-            <td>₹4,000 + ₹36,000</td>
-            <td>₹40,000</td>
-            <td>₹1,00,000</td>
-          </tr>
-          <tr>
-            <td>3 kW</td>
-            <td>₹6,000 + ₹54,000</td>
-            <td>₹60,000</td>
-            <td>₹1,38,000</td>
-          </tr>
-          <tr>
-            <td>4 kW</td>
-            <td>₹8,000 + ₹48,000</td>
-            <td>₹56,000</td>
-            <td>₹1,34,000</td>
-          </tr>
-          <tr>
-            <td>5 kW</td>
-            <td>₹10,000 + ₹60,000</td>
-            <td>₹70,000</td>
-            <td>₹1,48,000</td>
-          </tr>
-        </tbody>
-      </table>
-      <p class="note">*CBI = Central Financial Assistance (CFA) benefits over five years</p>
-    </div>
-  </div>
-</section>
-
-
-
-
-  
-
-  <!-- Contact -->
-<section id="contact" class="contact">
-  <div class="container">
-    <div class="section-title">
-      <h2>Contact Us</h2>
-      <p>We’d love to hear from you! Get in touch with us today 🚀</p>
-    </div>
-
-    <div class="contact-container">
       
-      <!-- Contact Info -->
-      <div class="contact-info">
-        <h3 class="animate-title">Get In Touch</h3>
-        <div class="contact-details">
-          <div class="contact-item">
-            <i class="fas fa-map-marker-alt bounce-icon"></i>
-            <div>
-              <h4>Office</h4>
-              <p>1st Floor, 281, B/4, Pocket 4, Sector 7, Rohini, New Delhi, Delhi, 110085</p>
+      <div class="subsidy-box">
+        <h3>Residential Consumers of Azamgarh Solar Subsidies</h3>
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Rooftop Solar Plant Capacity (kW)</th>
+                <th>Central Subsidy (₹)</th>
+                <th>State Subsidy (₹)</th>
+                <th>Total Subsidy (₹)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1 kW</td>
+                <td>₹30,000</td>
+                <td>₹5,000</td>
+                <td>₹35,000</td>
+              </tr>
+              <tr>
+                <td>2 kW</td>
+                <td>₹60,000</td>
+                <td>₹7,500</td>
+                <td>₹67,500</td>
+              </tr>
+              <tr>
+                <td>3 kW</td>
+                <td>₹78,000</td>
+                <td>₹10,000</td>
+                <td>₹88,000</td>
+              </tr>
+              <tr>
+                <td>4 kW</td>
+                <td>₹78,000</td>
+                <td>₹12,000</td>
+                <td>₹90,000</td>
+              </tr>
+              <tr>
+                <td>5 kW</td>
+                <td>₹78,000</td>
+                <td>₹15,000</td>
+                <td>₹93,000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="note">* Rates are under PM Surya Ghar / U.P. Rooftop Solar Programme; actual subsidy and eligibility as per UPNEDA & Azamgarh local DISCOM.</p>
+      </div>
+
+      <div class="subsidy-box">
+        <h3>Commercial & Industrial Consumers of Azamgarh Solar Subsidies</h3>
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Rooftop Solar Plant Capacity (kW)</th>
+                <th>Azamgarh Solar Subsidy <br> GBI (over five years)*</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1 kW</td>
+                <td>₹6,000</td>
+              </tr>
+              <tr>
+                <td>2 kW</td>
+                <td>₹12,000</td>
+              </tr>
+              <tr>
+                <td>3 kW</td>
+                <td>₹18,000</td>
+              </tr>
+              <tr>
+                <td>4 kW</td>
+                <td>₹24,000</td>
+              </tr>
+              <tr>
+                <td>5 kW</td>
+                <td>₹30,000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="note">*GBI = Generation Based Incentive paid over five years (sample data adapted from Delhi; confirm with Azamgarh DISCOM/UPNEDA for actual values).</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Owner Section -->
+  <section id="owner" class="owner-section">
+    <div class="container">
+      <div class="owner-container">
+        <div class="owner-about">
+          <h3 class="animated-text-left">
+            <span>Visionary Leader</span> <span>|</span> <span>Renewable Energy Enthusiast</span> <span>|</span> <span>Inspiring Change</span>
+          </h3>
+        </div>
+
+        <div class="owner-card">
+          <h2 class="section-title">Meet Our Founder</h2>
+          <div class="owner-photo">
+            <img src="img/GM1.png" alt="Owner of G M Solar"/>
+          </div>
+          <h3 class="owner-name">Mr. Gufran Mallik</h3>
+          <p class="owner-role">Founder & CEO, G M Solar</p>
+        </div>
+
+        <div class="owner-trust">
+          <h3 class="animated-text-right">
+            <span>G M Solar –</span> <span>Powering Homes & Businesses</span> <span>with Trust, Quality & Excellence!</span>
+          </h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-title">
+        <h2>What Our Clients Say</h2>
+        <p>Hear from our satisfied customers</p>
+      </div>
+      <div class="testimonial-slider">
+        <div class="testimonial">
+          <div class="testimonial-content">
+            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+            <p>"G M Solar installed a 5kW system at my home. The process was smooth, and I'm already seeing significant savings on my electricity bills."</p>
+            <div class="testimonial-author">
+              <h4>Rajesh Kumar</h4>
+              <p>Residential Client, Azamgarh</p>
             </div>
           </div>
-          <div class="contact-item">
-            <i class="fas fa-phone-alt bounce-icon"></i>
-            <div>
-              <h4>Phone</h4>
-              <p><a href="tel:+919999742120">+91 9999742120</a></p>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial-content">
+            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+            <p>"We partnered with G M Solar for our factory's energy needs. Their industrial solution has reduced our operational costs by 40%."</p>
+            <div class="testimonial-author">
+              <h4>Sunil Gupta</h4>
+              <p>Industrial Client, Pune</p>
             </div>
           </div>
-          <div class="contact-item">
-            <i class="fas fa-envelope bounce-icon"></i>
-            <div>
-              <h4>Email</h4>
-              <p><a href="mailto:rudra@gmail.com">rudra@gmail.com</a></p>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial-content">
+            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+            <p>"The team at G M Solar was professional and knowledgeable. They helped us navigate the subsidy process and delivered ahead of schedule."</p>
+            <div class="testimonial-author">
+              <h4>Priya Singh</h4>
+              <p>Commercial Client, Delhi</p>
             </div>
           </div>
         </div>
       </div>
+    </div>
+  </section>
 
-      <!-- Contact Form -->
-      <div class="contact-form">
-        <form id="contactForm">
-          <input type="text" placeholder="✨ Your Name" required />
-          <input type="email" placeholder="📧 Your Email" required />
-          <input type="tel" placeholder="📱 Your Phone" />
-          <textarea placeholder="💬 Your Message" required></textarea>
-          <button type="submit" class="glow-btn">🚀 Send Message</button>
-        </form>
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-title">
+        <h2>Contact Us</h2>
+        <p>We'd love to hear from you! Get in touch with us today 🚀</p>
+      </div>
+
+      <div class="contact-container">
+        <div class="contact-info">
+          <h3>Get In Touch</h3>
+          <div class="contact-details">
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h4>Office</h4>
+                <p>Sathiaon, Azamgarh, Uttar Pradesh 276406</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone-alt"></i>
+              <div>
+                <h4>Phone</h4>
+                <p><a href="tel:+917905698418">+91 7905698418</a></p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h4>Email</h4>
+                <p><a href="mailto:gmsolar@gmail.com">gmsolar@gmail.com</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="map-container">
+            <div class="map-placeholder">
+              <i class="fas fa-map-marked-alt"></i>
+              <p>Interactive Map</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <form id="contactForm">
+            <div class="form-group">
+              <input type="text" placeholder="Your Name" required />
+            </div>
+            <div class="form-group">
+              <input type="email" placeholder="Your Email" required />
+            </div>
+            <div class="form-group">
+              <input type="tel" placeholder="Your Phone" />
+            </div>
+            <div class="form-group">
+              <textarea placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message <i class="fas fa-paper-plane"></i></button>
+          </form>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-
-<!-- Floating Call Button -->
-<a href="tel:+919999742120" class="call-icon" title="Call Us">
-  <i class="fas fa-phone-alt"></i>
-</a>
-
-
+  <!-- Floating Call Button -->
+  <a href="tel:+917905698418" class="call-icon" title="Call Us">
+    <i class="fas fa-phone-alt"></i>
+  </a>
 
   <!-- Footer -->
   <footer>
     <div class="container">
       <div class="footer-container">
         <div class="footer-col">
-          <h4>Alt Lite</h4>
+          <h4>G M Solar</h4>
           <p>Empowering lives with clean and renewable solar energy for a brighter tomorrow.</p>
           <div class="social-links">
             <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -592,12 +599,12 @@
           <h4>Quick Links</h4>
           <ul>
             <li><a href="#home">Home</a></li>
-  <li><a href="#about">About</a></li>
-  <li><a href="#services">Services</a></li>
-  <li><a href="#projects">Projects</a></li>
-  <li><a href="#equipment">Solutions</a></li>
-  <li><a href="#subsidy">Subsidy</a></li> <!-- ✅ New Menu Item -->
-  <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#equipment">Solutions</a></li>
+            <li><a href="#subsidy">Subsidy</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
         <div class="footer-col">
@@ -611,19 +618,24 @@
           </ul>
         </div>
         <div class="footer-col">
-          <h4>Working Hours</h4>
-          <p>Mon - Sat: 9:00 AM - 6:00 PM</p>
-          <p>Sunday: Closed</p>
+          <h4>Newsletter</h4>
+          <p>Subscribe to our newsletter for the latest updates</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your Email" required>
+            <button type="submit">Subscribe</button>
+          </form>
         </div>
       </div>
       <div class="copyright">
-        <p>&copy; 2025 Rudra Urja. All Rights Reserved. 
+        <p>&copy; 2025 G M Solar. All Rights Reserved. 
           | Designed by <a href="https://6388505232.github.io/Dipak-Portfolio-/" target="_blank">Dipak Dubey</a>
         </p>
       </div>
     </div>
   </footer>
 
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
