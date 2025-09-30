@@ -558,3 +558,45 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 1500); // Show loader for at least 1.5 seconds
   });
 });
+
+ const lightbox = GLightbox({
+    selector: '.glightbox',
+    touchNavigation: true,
+    loop: true,
+    autoplayVideos: true
+  });
+
+
+
+  // Contact form handling
+function initContactForm() {
+  const contactForm = document.getElementById("contactForm");
+  
+  if (contactForm) {
+    contactForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+
+      // Get form values
+      let name = document.getElementById("name").value;
+      let email = document.getElementById("email").value;
+      let phone = document.getElementById("phone").value;
+      let message = document.getElementById("message").value;
+
+      // Format WhatsApp message
+      let whatsappMessage = `Hello, I want to contact you:%0A
+*Name:* ${name}%0A
+*Email:* ${email}%0A
+*Phone:* ${phone}%0A
+*Message:* ${message}`;
+
+      // WhatsApp API link
+      let whatsappURL = `https://wa.me/7011881895?text=${whatsappMessage}`;
+
+      // Open WhatsApp
+      window.open(whatsappURL, "_blank");
+
+      // Optional: reset form after redirect
+      contactForm.reset();
+    });
+  }
+}
